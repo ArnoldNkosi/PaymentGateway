@@ -10,7 +10,6 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
@@ -35,5 +34,6 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Push Docker image
-        run: docker tag payment-app:latest arnie10/payment-app:latest
-        run: docker push arnie10/payment-app:latest
+        run: |
+          docker tag payment-app:latest yourusername/payment-app:latest
+          docker push yourusername/payment-app:latest
