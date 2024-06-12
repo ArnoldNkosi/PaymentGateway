@@ -36,5 +36,5 @@ jobs:
 
       - name: Push Docker image
         run: |
-          docker tag payment-app:latest yourusername/payment-app:latest
-          docker push yourusername/payment-app:latest
+          docker tag payment-app:latest arnie10/payment-app:latest
+          docker push arnie10/payment-app:latest
